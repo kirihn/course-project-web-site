@@ -1,0 +1,259 @@
+@import "peremenye";
+h1{
+    text-align: center;
+    font-size: $gl-text;
+}
+.section-1{
+    background: url(../png/group-portrait-of-adorable-puppies.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    // cover подгоняет размеры картинки под ширину окна браузера
+    background-position-x: center;
+
+    padding: $content-padding;
+    height: 600px;
+    @media (max-width: 810px){
+        height: 800px;
+    }
+    @media (max-width: 580px){
+        height: 1070px;
+    }
+    .number-vet{
+        margin: auto;
+        padding-top: 80px;
+        max-width: 450px;
+        h1{
+            font-size: $zogl;
+        }
+        p{
+            font-size: $zogl;
+        }
+        @media (max-width: 760px) {
+            max-width: 350px;
+            h1{
+                font-size: $mini-zogl;
+            }
+            p{
+                font-size: $mini-zogl;
+            }
+        }
+        @media (max-width: 405px) {
+            max-width: 260px;
+            h1{
+                font-size: $micro-zogl;
+            }
+            p{
+                font-size: $micro-zogl;
+            }
+            font-size: $micro-zogl;
+        }
+        text-align: center;
+        hr{
+            width: 100%;
+            height: 2px;
+            border: none;
+            color: black; /* Цвет линии для остальных браузеров */
+            background-color: black; /* Цвет линии для браузера Firefox и Opera */
+        }
+    }
+    .three-bloks{
+        margin: auto;
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 850px;
+        height: 220px;
+        div{
+            img{
+                margin: 10px 0 10px 70px;
+                width: 80px;
+                height: 80px;
+            }
+            margin: 0 10px 0 10px;
+            height: 220px;
+            width: 220px;
+            //<!--[if lt IE 9]>
+            background-color: $white;
+            background-color: rgba($color: $white, $alpha: 0.6); //современные браузеры
+            //opacity: 0.5; не подходит т.к. задает прозрачность и дочерним элементам
+            border-radius: 30px;
+            p{
+                font-size: $text;
+                text-align: center;
+            }
+        }
+        .three-bloks-1 , .three-bloks-2{
+            @media (max-width: 810px){
+                margin: 0 30px;
+            }
+            @media (max-width: 750px){
+                margin: 0 10px;
+            }
+            @media (max-width: 580px){
+                margin: 0 50px;
+            }
+            @media (max-width: 420px){
+                margin: 0;
+            }
+        }
+        .three-bloks-2{
+            @media (max-width: 580px){
+                margin: 50px 50px 0 50px;
+            }
+            @media (max-width: 420px){
+                margin: 50px 0 0 0;
+            }
+        }
+        .three-bloks-3{
+            @media (max-width: 810px){
+                margin: 50px 0 0 0;
+            }
+        }
+    }
+    @media (min-width: 1700px) {
+        height: 800px;
+        .number-vet{
+            padding-top: 130px ;
+        }
+        .three-bloks{
+            max-width: 950px;
+            margin-top: 150px;
+            div{
+                padding: 20px;
+            }
+        }
+    }
+}
+main{
+    background-color: $white;
+    .content-article{
+        padding: $content-padding;
+        max-width: $content-width;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: auto;
+        h1{
+            margin: auto;
+            max-width:450px ;
+            font-size: $gl-text;
+            @media (max-width: 520px ){
+            font-size: $gl-text - 4px;
+            }
+            @media (max-width: 440px ){
+                font-size: $gl-text - 7px;
+            }
+            @media (max-width: 395px ){
+                font-size: $gl-text - 8px;
+            }
+        }
+        hr{
+            height: 2px;
+            max-width:460px ;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: none;
+            color: black; /* Цвет линии для остальных браузеров */
+            background-color: black; /* Цвет линии для браузера Firefox и Opera */
+        }
+        .div-img{
+            display: block;
+            margin: auto;
+            max-width: 900px;
+            img{
+                width: 100%;
+            }
+        }
+        p{
+            margin: auto;
+            margin-top: 30px;
+            max-width: 900px;
+            font-size: $text;
+            text-align: justify;
+        }
+    }
+    .section-2{
+        background-color: $white;
+        .content-section-2{
+            margin: auto;
+            padding: $content-padding;
+            max-width: $content-width;
+            h1{
+                @media (max-width: 520px ){
+                    font-size: $gl-text - 3px;
+                }
+            }
+            hr{
+                height: 2px;
+                width: 200px;
+                margin: auto;
+                margin-top: 5px;
+                border: none;
+                color: black; /* Цвет линии для остальных браузеров */
+                background-color: black; /* Цвет линии для браузера Firefox и Opera */
+            }
+            .five-bloks{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                div{
+                    margin: 50px 10px 0 10px;
+                    height: 300px;
+                    width: 300px;
+                    background-color: $green;
+                    border-radius: 30px;
+                    img{
+                        display: block;
+                        margin: auto;
+                        margin-top: 20px;
+                        margin-bottom: 10px ;
+                        width: 80px;
+                        height: 80px;
+                    }
+                    p{
+                        display: block;
+                        padding: 15px;
+                        margin: 0;
+                        font-size: $text;
+                        text-align: center;
+                        @media (max-width: 370px) {
+                            font-size: $text - 5px;
+                        }
+                    }    
+                }
+                @media (min-width: 1050px){
+                    .fibe-bloks-5{
+                        margin-right: 170px;
+                    }
+                    .fibe-bloks-4{
+                        margin-left: 170px;
+                    }
+                }
+                @media (max-width: 1050px){
+                    div{
+                        margin: 50px 50px 0 50px;
+                    }
+                }
+                @media (max-width: 900px){
+                    div{
+                        margin: 50px 5px 0 5px;
+                    }                
+                }            
+            }
+            .p-in-section-3{
+                padding: 50px 0 50px 0;
+                text-align: center;
+                max-width: 800px;
+                font-size: $zogl;
+                margin: auto;
+                @media (max-width: 760px) {
+                    font-size: $zogl - 5px;
+                }
+                @media (max-width: 479px) {
+                    font-size: $zogl - 8px;
+                }
+            }
+        }
+    }
+}

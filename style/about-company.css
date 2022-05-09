@@ -1,0 +1,190 @@
+main .sec-1 {
+  background: url(../png/phon-company1.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main .sec-2 {
+  background: url(../png/phon-company2.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main section {
+  height: 530px;
+  width: 100%;
+  text-align: center;
+}
+
+main section h1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 35px;
+}
+
+main section p {
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 30px 0 30px;
+  font-size: 30px;
+  text-align: justify;
+}
+
+@media (max-width: 1000px) {
+  main section p {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 760px) {
+  main section h1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  main section p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 640px) {
+  main section {
+    height: 550px;
+  }
+  main section h1 {
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  main section p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 510px) {
+  main section {
+    height: 650px;
+  }
+}
+
+@media (max-width: 460px) {
+  main section {
+    height: 700px;
+  }
+  main section p {
+    padding: 0 20px 0 20px;
+  }
+}
+
+@media (max-width: 383px) {
+  main section p {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 363px) {
+  main section {
+    height: 750px;
+  }
+}
+
+@media (max-width: 346px) {
+  main section {
+    height: 800px;
+  }
+  main section p {
+    padding: 0 15px 0 15px;
+    font-size: 22px;
+  }
+}
+
+main article h1 {
+  font-size: 30px;
+  text-align: center;
+  padding: 40px;
+}
+
+@media (max-width: 460px) {
+  main article h1 {
+    padding: 20px;
+  }
+}
+
+main article p {
+  font-size: 25px;
+  margin: auto;
+  margin-bottom: auto;
+  text-align: justify;
+  max-width: 1200px;
+  padding: 0 30px 0 30px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 460px) {
+  main article p {
+    padding: 0 20px 20px 20px;
+    font-size: 22px;
+  }
+}
+
+main article div {
+  max-width: 1200px;
+  padding: 0 30px 0 30px;
+  margin: auto;
+  margin-bottom: 40px;
+  overflow: auto;
+}
+
+@media (max-width: 460px) {
+  main article div {
+    padding: 0 20px 0 20px;
+    margin-bottom: 20px;
+  }
+}
+
+main article div table {
+  font-size: 25px;
+  width: 100%;
+  background: #AFF2AE;
+  border-collapse: collapse;
+  border: 2px solid #AFF2AE;
+}
+
+@media (max-width: 390px) {
+  main article div table {
+    font-size: 22px;
+  }
+  main article div table th {
+    font-size: 15px;
+  }
+}
+
+main article div table tr, main article div table td, main article div table th {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+main article div table th {
+  font-size: 30px;
+}
+
+@media (max-width: 690px) {
+  main article div table th {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 390px) {
+  main article div table th {
+    font-size: 25px;
+  }
+}
+
+main article div table td:last-child {
+  text-align: center;
+}
+
+main article div table .text {
+  text-align: left;
+}
+/*# sourceMappingURL=about-company.css.map */

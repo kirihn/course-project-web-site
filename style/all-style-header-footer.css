@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  font-weight: normal;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  z-index: 2;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  position: fixed;
+}
+
+header .div-header {
+  padding: 0 30px 0 30px;
+  margin: auto;
+  max-width: 1200px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .div-header .a-logo {
+  display: block;
+}
+
+header .div-header .a-logo img {
+  margin: 15px;
+  height: 50px;
+  width: 200px;
+}
+
+header .div-header nav {
+  background-color: #AFF2AE;
+  border-radius: 10px;
+  height: 50px;
+  margin: 15px  0 0 0px;
+  width: 800px;
+  min-width: 700px;
+}
+
+header .div-header nav ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 30px;
+}
+
+header .div-header nav ul .li-a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  left: 0;
+  bottom: -2px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+header .div-header nav ul .li-a:hover:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+header .div-header nav ul .menu-li {
+  margin: 7px 15px 7px 15px;
+}
+
+@media (max-width: 1050px) {
+  header .div-header nav ul .menu-li {
+    margin: 7px 13.5px 7px 13.5px;
+  }
+}
+
+.otstup {
+  height: 80px;
+  width: 100%;
+}
+
+@media (max-width: 1120px) {
+  header {
+    height: 135px;
+  }
+  header .div-header {
+    height: 120px;
+  }
+  header .div-header .a-logo {
+    height: 70px;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  header .div-header .a-logo img {
+    margin: 10px 55px;
+  }
+}
+
+@media (max-width: 1120px) and (max-width: 700px) {
+  header .div-header .a-logo img {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 1120px) {
+  header .div-header nav {
+    margin: auto;
+  }
+  .otstup {
+    height: 135px;
+  }
+}
+
+@media (max-width: 760px) {
+  header {
+    height: 164px;
+    position: static;
+  }
+  header .div-header nav {
+    min-width: 200px;
+    max-width: 80%;
+    height: auto;
+  }
+  header .div-header nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .div-header nav ul .menu-li {
+    width: 138px;
+    text-align: center;
+    font-size: 23px;
+  }
+  header .div-header nav ul .menu-li .li-a:before {
+    height: 1px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .otstup {
+    height: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 248px;
+  }
+  header .div-header nav ul .menu-li {
+    margin: 7px 20px;
+  }
+}
+
+footer {
+  background-color: #C4C4C4;
+}
+
+footer .footer-div {
+  max-width: 1200px;
+  padding: 0 30px 0 30px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer-div p {
+  font-size: 20px;
+  display: block;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 479px) {
+  footer .footer-div p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 919px) {
+  footer .footer-div p {
+    text-align: justify;
+    margin: auto;
+  }
+}
+
+footer .footer-div div {
+  width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-div div a {
+  display: block;
+  width: 60px;
+  margin: 10px 10px 0 10px;
+}
+
+footer .footer-div div a .vk {
+  margin-top: 12px;
+  width: 60px;
+}
+
+footer .footer-div div a .f {
+  width: 60px;
+}
+
+footer .footer-div div a .ok {
+  height: 60px;
+}
+
+@media (max-width: 919px) {
+  footer .footer-div div {
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=all-style-header-footer.css.map */

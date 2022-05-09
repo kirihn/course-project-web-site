@@ -1,0 +1,165 @@
+@import "peremenye";
+main{
+    .sec-1{
+        background: url(../png/phon-company1.jpg) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        // cover подгоняет размеры картинки под размеры экрана
+    }
+    .sec-2{
+        background: url(../png/phon-company2.jpg) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    section{
+        height: 530px;
+        width: 100%;
+    
+        text-align: center;
+        h1{
+            text-align: center;
+            padding-top: 50px ;
+            padding-bottom: 50px ;
+            font-size: $zogl;
+        }
+        p{
+            margin: auto;
+            max-width: $content-width ;
+            padding: $content-padding;
+            font-size: $gl-text;
+            text-align: justify;         
+        }
+    }
+    @media(max-width: 1000px){
+        section{
+            p{
+                font-size: $gl-text - 3px;
+            }
+        }
+    }
+    @media(max-width: 760px){
+        section{
+            h1{
+                padding-top: 40px ;
+                padding-bottom: 40px ;
+            }
+            p{
+                font-size: $gl-text - 5px;
+            }
+        }
+    }
+    @media(max-width: 640px){
+        section{
+            height: 550px;
+            h1{
+                font-size: $zogl - 5px;
+                padding-top:    15px ;
+                padding-bottom: 15px ;
+            }
+            p{
+                font-size: $gl-text - 6px;
+            }
+        }
+    }
+    @media(max-width: 510px){
+        section{
+            height: 650px;
+        }
+    }
+    @media(max-width: 460px){
+        section{
+            height: 700px;
+            p{
+                padding: 0 20px 0 20px;
+            }
+        }
+    }
+    @media(max-width: 383px){
+        section{
+            p{
+                font-size: $gl-text - 7px;
+            }
+        }
+    }
+    @media(max-width: 363px){
+        section{
+            height: 750px;
+        }
+    }
+    @media(max-width: 346px){
+        section{
+            height: 800px;
+            p{
+                padding: 0 15px 0 15px;
+                font-size: $gl-text - 8px;
+            }
+        }
+    }
+    article{
+        h1{
+            font-size: $gl-text;
+            text-align: center ;
+            padding: 40px;
+            @media(max-width: 460px){
+                padding: 20px;
+            }
+        }
+        p{
+            font-size: $text;
+            margin: auto;  
+            margin-bottom: auto;
+            text-align: justify;
+            max-width: $content-width;
+            padding: $content-padding;
+            padding-bottom: 40px;
+            @media(max-width: 460px){
+                padding: 0 20px 20px 20px;
+                font-size: $text - 3px;
+            }
+        }
+        div{
+            max-width: $content-width;
+            padding: $content-padding;
+            margin: auto;
+            margin-bottom: 40px;
+            overflow: auto;
+            @media(max-width: 460px){
+                padding: 0 20px 0 20px;
+                margin-bottom: 20px;
+            }
+            table{
+                font-size: $text;
+                @media(max-width: 390px){
+                    font-size: $text - 3px;
+                    th{
+                        font-size: $gl-text - 15px;
+                    }
+                }
+                width: 100%;
+                background: $green;
+                border-collapse: collapse; // убирает дублирование рамок у ячеек
+                border: 2px solid $green;
+                tr, td, th{
+                    border: 1px solid black;
+                    padding: 10px;
+                }
+                th{
+                    font-size: $gl-text;
+                    @media(max-width: 690px){
+                        font-size: $gl-text - 3px;
+                    }
+                    @media(max-width: 390px){
+                        font-size: $gl-text - 5px;
+                    }
+                }
+                td:last-child{ // стиль применяется последнему td элементу каждого родительского блока tr
+                    text-align: center;
+                }
+                .text{
+                    text-align: left;
+    
+                }
+            }
+        }
+    }
+}

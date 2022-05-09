@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+// подключаю шрифт
+@import "peremenye";//подключаю scss файл в котором находятся значения переменных
+* {
+    font-weight: normal; // задаю всем элементам с текстом нормальный (не жирный) стиль
+    font-family: "Roboto"; // задаю всему тексту шрифт Roboto
+    margin: 0; // обнуляю поля и отступы
+    padding: 0;
+}
+a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    
+}
+ul{
+    list-style-type: none;
+}
+body{
+    width: 100%;
+}
+header{
+    z-index: 2; // меняю фоложение по оси z шапки чтобы элементы не налазили на нее при скролле
+    width: 100%;
+    height: 80px;
+    background-color: $white;
+    position: fixed;
+    .div-header{
+        padding: $content-padding;
+        margin: auto;
+        max-width: $content-width;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .a-logo{
+            display: block;
+            img {
+                margin: 15px;
+                height: 50px;
+                width: 200px;
+            }
+        }
+        nav{
+            background-color: $green;
+            border-radius: 10px;
+            height: 50px;
+            margin:15px  0 0 0px;
+            width: 800px;
+            min-width: 700px;
+            ul{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                font-size: $gl-text;
+                .li-a{
+                    &:before{ // с помощбю псевдоэлемента я задаю подчеркивание пунктам в меню
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background: #000;
+                        left: 0;
+                        bottom: -2px;
+                        transition: .3s;
+                        transform: scale(0); // эта строка скрывает подчеркивание
+                    }
+                    &:hover:before {
+                        transform: scale(1); // а эта показывает его при наведении
+                    }
+                }
+                .menu-li{
+                    margin: 7px 15px 7px 15px;
+                    @media (max-width: 1050px){
+                        margin: 7px 13.5px 7px 13.5px;
+                    }
+                    //height: 36px;
+                }               
+            }
+        }
+    }
+}
+.otstup{
+    height: 80px;
+    width: 100%;
+}
+@media (max-width: 1120px){
+   header{
+    height: 135px;
+        .div-header{
+            height: 120px;
+            .a-logo{
+                height: 70px;
+                margin: auto;
+                margin-bottom: 0;
+                margin-top: 0;
+                img{
+                    margin: 10px 55px;
+                    @media (max-width: 700px){
+                        margin: 10px;
+                    }
+                }
+            }
+            nav{
+                margin: auto;
+            }
+        }
+   }
+   .otstup{
+    height: 135px;
+    
+    }
+}
+@media (max-width: 760px) {
+    header{
+        height: 164px;
+        position: static; // задает шапке статическое состояние
+        .div-header{
+            nav{
+                min-width: 200px;
+                max-width: 80%;
+                height:auto;
+                ul{
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .menu-li{
+                        width: 138px;
+                        text-align: center;
+                        font-size: $gl-text - 7px;
+                        .li-a{
+                            &:before{
+                                height: 1px;
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .otstup{
+        height: 0; 
+        // убирают отступ который не давал залазить элементап под 
+        //шапку когда она была в фиксированном состоянии
+        // т.к. теперь она не фиксированная а статическая
+    }
+}
+@media (max-width:500px) {
+    header{
+        height: 248px;
+        .div-header{
+            nav{
+                ul{
+                    .menu-li{
+                        margin: 7px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    background-color: #C4C4C4;
+    .footer-div{
+        max-width: $content-width;
+        padding: $content-padding;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; // перенос блоков на новую строку когда им не хватает места
+        p{
+            font-size: $text - 5px;
+            @media (max-width:479px) {
+                font-size: $text - 7px;
+            }
+            display: block;
+            max-width: 600px;
+            margin-bottom: 10px;
+            @media (max-width:919px) {
+                text-align: justify;
+                margin: auto;
+            }
+        }
+        div{
+            width: 260px;
+            display: flex;
+            justify-content: space-between;
+            a{
+                display: block;
+                width: 60px;
+                margin: 10px 10px 0 10px;
+                .vk{
+                    margin-top: 12px;
+                    width: 60px;
+                }
+                .f{
+                    width: 60px;
+                }
+                .ok{
+                    height: 60px;
+                }
+            }
+            @media (max-width:919px) {
+                margin: auto;
+            }
+        }
+    }
+}

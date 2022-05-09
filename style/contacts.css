@@ -1,0 +1,220 @@
+main .how-do-u {
+  background-color: #f7f7f7;
+  padding: 40px;
+}
+
+main .how-do-u h1 {
+  width: 306px;
+  margin: auto;
+  font-size: 35px;
+  padding: 10px;
+  border-bottom: black solid 2px;
+}
+
+@media (max-width: 760px) {
+  main .how-do-u {
+    padding: 20px;
+  }
+  main .how-do-u h1 {
+    width: 236px;
+    font-size: 27px;
+  }
+}
+
+main .info-text {
+  max-width: 900px;
+  padding: 30px;
+  margin: auto;
+}
+
+@media (max-width: 543px) {
+  main .info-text {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 475px) {
+  main .info-text {
+    padding: 15px;
+  }
+}
+
+main .info-text p {
+  font-size: 30px;
+  padding: 5px;
+}
+
+@media (max-width: 1089px) {
+  main .info-text p {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 543px) {
+  main .info-text p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 475px) {
+  main .info-text p {
+    font-size: 21px;
+  }
+}
+
+main .info-text p a {
+  color: blue;
+  text-decoration: underline;
+}
+
+main .info-text div {
+  width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .info-text div a {
+  display: block;
+  width: 30px;
+  margin: 10px 10px 0 10px;
+}
+
+main .info-text div a .vk {
+  margin-top: 7px;
+  width: 30px;
+}
+
+main .info-text div a .f {
+  width: 30px;
+}
+
+main .info-text div a .ok {
+  height: 30px;
+}
+
+main .container {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+}
+
+@media (max-width: 1400px) {
+  main .container {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  main .container {
+    margin: 20px;
+  }
+}
+
+main .container h1 {
+  font-size: 30px;
+  color: #28ab36;
+  padding: 10px 0;
+}
+
+@media (max-width: 390px) {
+  main .container h1 {
+    font-size: 31px;
+  }
+}
+
+main .container p {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+@media (max-width: 1400px) {
+  main .container p {
+    padding: 5px 0;
+  }
+}
+
+main .container .input-box {
+  padding: 10px 0;
+}
+
+@media (max-width: 1400px) {
+  main .container .input-box {
+    padding: 5px 0;
+  }
+}
+
+main .container .input-box input, main .container .input-box textarea {
+  border-radius: 5px;
+  font-size: 20px;
+  height: 40px;
+  border: none;
+  background: #f0f1f8;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+}
+
+@media (max-width: 360px) {
+  main .container .input-box input, main .container .input-box textarea {
+    text-align: center;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  main .container .input-box input, main .container .input-box textarea {
+    font-size: 18px;
+  }
+}
+
+main .container .input-box input:hover {
+  padding: 15px 25px;
+  height: 50px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+main .container .input-box textarea {
+  padding: 15px;
+  resize: none;
+  height: 70px;
+}
+
+main .container .input-box textarea:hover {
+  height: 80px;
+  padding: 20px 25px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+main .container .input-box input[type="button"] {
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  color: white;
+  background: #AFF2AE;
+}
+
+main .container .input-box input[type="button"]:hover {
+  padding: 15px 25px;
+  -webkit-box-shadow: -7px 7px 5px -5px rgba(34, 60, 80, 0.6);
+  box-shadow: -7px 7px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+main .container .input-box input[type="button"]:active {
+  padding: 14px 24px;
+  height: 48px;
+  -webkit-transition-duration: 1ms;
+          transition-duration: 1ms;
+  -webkit-box-shadow: -8px 8px 10px -7px rgba(34, 60, 80, 0.6) inset;
+  box-shadow: -8px 8px 10px -7px rgba(34, 60, 80, 0.6) inset;
+}
+/*# sourceMappingURL=contacts.css.map */

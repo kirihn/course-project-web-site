@@ -1,0 +1,76 @@
+@import "peremenye";
+main{
+    hr{
+        width: 95%;
+        max-width: $content-width;
+        margin: auto;
+        border: none;
+        color: rgb(207, 207, 207); /* Цвет линии для остальных браузеров */
+        background-color: rgb(207, 207, 207); /* Цвет линии для браузера Firefox и Opera */
+        height: 1px;
+    }
+    .our-doctors{
+        background-color: #f7f7f7;
+        padding: 40px;
+        h1{
+            margin: auto;
+            width: 200px;
+            font-size: $zogl;
+            padding: 10px;
+            border-bottom: black solid 2px;
+        }
+    }
+    .div-doctor{
+        max-width: $content-width;
+        padding: 15px 30px 15px 30px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;   
+        img{
+            height: 450px;
+            width: 300px;
+            margin-right: 40px;
+        } 
+        div{
+            max-width: 800px;
+            p{
+                text-align: justify;
+                font-size: $text - 5px;
+                @media (max-width: 1089px){
+                    font-size: $text - 7px;
+                }
+                @media (max-width: 954px){
+                    font-size: $text - 9px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:760px){
+    main{
+        .our-doctors{
+            h1{
+
+                width: 160px;
+                font-size: $zogl - 7px;
+            }
+        }
+        .div-doctor{
+            flex-wrap: wrap; 
+            img{
+                margin-right: 0;
+                margin: auto;
+            }   
+            div{
+                width: 100%;
+                h2{
+                    padding: 10px;
+                    text-align: center;
+                }
+                p{
+                    font-size: $text - 10px;
+                }
+            }
+        }
+    }
+}

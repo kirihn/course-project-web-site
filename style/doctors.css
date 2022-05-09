@@ -1,0 +1,89 @@
+@charset "UTF-8";
+main hr {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  border: none;
+  color: #cfcfcf;
+  /* Цвет линии для остальных браузеров */
+  background-color: #cfcfcf;
+  /* Цвет линии для браузера Firefox и Opera */
+  height: 1px;
+}
+
+main .our-doctors {
+  background-color: #f7f7f7;
+  padding: 40px;
+}
+
+main .our-doctors h1 {
+  margin: auto;
+  width: 200px;
+  font-size: 35px;
+  padding: 10px;
+  border-bottom: black solid 2px;
+}
+
+main .div-doctor {
+  max-width: 1200px;
+  padding: 15px 30px 15px 30px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .div-doctor img {
+  height: 450px;
+  width: 300px;
+  margin-right: 40px;
+}
+
+main .div-doctor div {
+  max-width: 800px;
+}
+
+main .div-doctor div p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+@media (max-width: 1089px) {
+  main .div-doctor div p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 954px) {
+  main .div-doctor div p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 760px) {
+  main .our-doctors h1 {
+    width: 160px;
+    font-size: 28px;
+  }
+  main .div-doctor {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .div-doctor img {
+    margin-right: 0;
+    margin: auto;
+  }
+  main .div-doctor div {
+    width: 100%;
+  }
+  main .div-doctor div h2 {
+    padding: 10px;
+    text-align: center;
+  }
+  main .div-doctor div p {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=doctors.css.map */
